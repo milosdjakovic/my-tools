@@ -52,11 +52,12 @@ TEXT_HEIGHT=$((FONT_SIZE + 2 * TEXT_PADDING))
 # Create new image with text below
 magick \
   "$IMAGE_PATH" \
-  -background white \
+  -background black \
   -gravity south \
   -splice 0x${TEXT_HEIGHT} \
-  -fill black \
+  -fill white \
   -font "Arial" \
+  -weight bold \
   -pointsize ${FONT_SIZE} \
   -annotate +0+${TEXT_PADDING} "${TEXT}" \
   "$OUTPUT_FILE"
