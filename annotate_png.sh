@@ -46,7 +46,7 @@ WIDTH=$(echo "$DIMENSIONS" | cut -d' ' -f1)
 HEIGHT=$(echo "$DIMENSIONS" | cut -d' ' -f2)
 
 # Define text parameters
-FONT_SIZE=40
+FONT_SIZE=30
 TEXT_PADDING=20
 TEXT_HEIGHT=$((FONT_SIZE + 2 * TEXT_PADDING))
 
