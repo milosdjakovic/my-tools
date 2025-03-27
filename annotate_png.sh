@@ -40,11 +40,6 @@ FILENAME_NO_EXT="${FILENAME%.*}"
 # Create output filename in the same directory as original
 OUTPUT_FILE="${DIRECTORY}/${FILENAME_NO_EXT}_annotated.png"
 
-# Get image dimensions
-DIMENSIONS=$(magick identify -format "%w %h" "$IMAGE_PATH")
-WIDTH=$(echo "$DIMENSIONS" | cut -d' ' -f1)
-HEIGHT=$(echo "$DIMENSIONS" | cut -d' ' -f2)
-
 # Define text parameters
 FONT_SIZE=30
 TEXT_PADDING=20
